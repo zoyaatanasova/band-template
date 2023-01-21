@@ -1,0 +1,125 @@
+.header {
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav>ul {
+    display: flex;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 24px;
+}
+
+.nav li ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: visibility var(--transition-duration) var(--transition-timing-function), opacity var(--transition-duration) var(--transition-timing-function);
+}
+
+.nav li:has(ul)>a:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border-width: 5px;
+    border-style: solid;
+    border-color: currentColor transparent transparent;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 4px;
+}
+
+.nav li:hover a {
+    background-color: #ccc;
+    color: black
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav li:hover>ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-button {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #f44336;
+}
+
+@media only screen and (max-width:1023px) {
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        background-color: #000;
+        display: none;
+    }
+
+    .nav>ul {
+        display: block;
+    }
+
+    .nav li ul {
+        position: static;
+        display: none;
+    }
+
+    .nav li ul:hover {
+        display: block;
+    }
+
+    .nav-toggle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background: none;
+        appearance: none;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-toggle span {
+        width: 12px;
+        height: 2px;
+        display: block;
+        background-color: #fff;
+        margin: 1px auto;
+    }
+
+    .header--open .nav {
+        display: block;
+    }
+}

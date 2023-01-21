@@ -1,0 +1,86 @@
+.schedule {
+    background-color: black;
+    color: #fff;
+    padding: 64px 16px 48px;
+    margin-bottom: 64px;
+}
+
+.schedule__header {
+    text-align: center;
+}
+
+.schedule__header h2 {
+    text-transform: uppercase;
+    margin-bottom: 10;
+}
+
+.schedule__header p {
+    opacity: 0.60;
+    margin-bottom: 32px;
+}
+
+.schedule__tickets {
+    color: #757575;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.gig img {
+    width: 100%;
+    height: auto;
+}
+
+.schedule__tickets li {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule__tickets li:last-child {
+    justify-content: space-between;
+}
+
+.schedule__tickets span,
+.schedule__tickets strong {
+    color: #fff;
+    background-color: #f44336;
+    display: block;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+.schedule__tickets strong {
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.schedule__tickets p {
+    text-align: center;
+    margin: 0;
+}
+
+.gig img:hover {
+    opacity: 0.60;
+}
+
+.gig {
+    background-color: #000;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.gig__body {
+    background-color: #fff;
+    padding: 16px 16px 0;
+    font-size: 15px;
+}
+
+.gig__body p:nth-child(2) {
+    opacity: 0.60;
+}

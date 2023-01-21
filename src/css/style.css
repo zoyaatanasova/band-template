@@ -1,0 +1,11 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import './general.css';
+@import './grid/style.css';
+@import './about.css';
+@import './schedule.css';
+@import './header.css';
+@import './slider.css';
+@import './contact.css';
+@import './section-image.css';
+@import './button.css';
+@import './footer.css';

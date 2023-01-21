@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<title>PROJECT TITLE</title>
+</head>
+
+<body>
+	<header class="header">
+		<button class="nav-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Band</a></li>
+				<li><a href="#">Tour</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">More</a>
+					<ul>
+						<li><a hreff="#">Merchandise</a></li>
+						<li><a hreff="#">Extras</a></li>
+						<li><a hreff="#">Media</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<button class="search-button">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</button>
+	</header>
+
+	<div class="slider">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image:url(chicago.jpg);">
+					<div class="slider__content">
+						<h3>Los Angeles</h3>
+						<p>We had the best time playing at Venice Beach!</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide" style="background-image:url(la.jpg);">
+
+					<div class="slider__content">
+						<h3>New York</h3>
+						<p>The atmosphere in New York is lorem ipsum.</p>
+					</div>
+
+				</div>
+
+				<div class="swiper-slide" style="background-image:url(ny.jpg);">
+
+					<div class="slider__content">
+						<h3>Chicago</h3>
+						<p>Thank you, Chicago - A night we won't forget.</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="swiper-button-prev"></div>
+
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+
+	<section class="about">
+		<div class="shell">
+
+			<div class="about__header">
+				<h2>The Band</h2>
+				<p><em> We love music</em></p>
+			</div>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident totam iusto debitis praesentium
+				molestias mollitia quos obcaecati accusamus at animi quam hic blanditiis sint, soluta saepe sunt
+				doloribus consectetur nesciunt voluptatum vel. Voluptate aut id veritatis illum atque quibusdam
+				voluptates minima iure asperiores ipsam vel, expedita praesentium eaque eum dignissimos aspernatur
+				nesciunt quas ipsa facere natus facilis sequi corrupti eligendi. Reprehenderit voluptatum alias iure
+				laudantium, labore eveniet cupiditate itaque blanditiis, nesciunt asperiores, provident corrupti est
+				aperiam? Corrupti illum soluta repudiandae.</p>
+
+
+			<div class="members">
+				<figure class="member">
+					<figcaption>Name</figcaption>
+					<img src="bandmember.jpg" alt="band member">
+				</figure>
+
+				<figure class="member">
+					<figcaption>Name</figcaption>
+					<img src="bandmember.jpg" alt="band member">
+				</figure>
+
+				<figure class="member">
+					<figcaption>Name</figcaption>
+					<img src="bandmember.jpg" alt="band member">
+				</figure>
+			</div>
+		</div>
+	</section>
+
+	<section class="schedule">
+		<div class="shell">
+			<div class="schedule__header">
+				<h2>Tour Dates</h2>
+				<p><em>Remember to book your tickets!</em></p>
+			</div>
+
+			<ul class="schedule__tickets">
+				<li>
+					<p>September</p>
+					<span>Sold out</span>
+				</li>
+				<li>
+					<p>October</p>
+					<span>Sold out</span>
+				</li>
+				<li>
+					<p>November</p>
+					<strong>3</strong>
+				</li>
+			</ul>
+
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="gig">
+						<img src="newyork.jpg" alt="New York">
+						<div class="gig__body">
+							<p><strong>New York</strong></p>
+							<p>Fri 27 Nov 2016</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.</p>
+							<a href="#" class="button">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="gig">
+						<img src="paris.jpg" alt="Paris">
+						<div class="gig__body">
+							<p><strong>Paris</strong></p>
+							<p>Sat 28 Nov 2016</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.</p>
+							<a href="#" class="button">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="gig">
+						<img src="sanfran.jpg" alt="San Francisko">
+						<div class="gig__body">
+							<p><strong>San Francisco</strong></p>
+							<p>Sun 29 Nov 2016</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.</p>
+							<a href="#" class="button">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="shell">
+			<div class="contact__header">
+				<h2>Contact</h2>
+				<p><em>Fan? Drop a note!</em></p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="address">
+							<ul>
+								<li>
+									<i class="fa fa-map-marker"></i>
+									<a href="https://maps.google.com">Chicago, US</a>
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>
+									<a href="tel: +00151515">Phone: +00151515</a>
+								</li>
+								<li>
+									<i class="fa fa-envelope"></i>
+									<a href="mailto:mail@mail.com">Email: mail@mail.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<form action="POST" class="form">
+							<div class="form__row">
+								<div class="form__row--part">
+									<label for="name" class="sr-only">Name</label>
+									<input class="field" type="text" name="name" id="name" placeholder="Name">
+								</div>
+								<div class="form__row--part">
+									<label for="email" class="sr-only">Email</label>
+									<input class="field" type="email" name="emmail" id="name" placeholder="Email">
+								</div>
+							</div>
+
+							<div class="form__row">
+								<label for="text" class="sr-only">Message</label>
+								<input class="field" type="text" name="text" id="name" placeholder="Message">
+							</div>
+
+							<button class="button" type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-image">
+		<img src="map.jpg" alt="map">
+	</section>
+
+	<footer class="footer">
+		<ul class="socials">
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-square-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-snapchat"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-pinterest-p"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+			</li>
+		</ul>
+		<p>Powered By <a href="#"> Someone</a></p>
+	</footer>
+
+	<script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

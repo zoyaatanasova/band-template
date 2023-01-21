@@ -1,0 +1,44 @@
+.about {
+    padding: 64px 16px;
+}
+
+.about__header {
+    text-align: center;
+}
+
+.about__header p {
+    opacity: 0.60;
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    text-transform: uppercase;
+}
+
+.members {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.member {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 154px;
+}
+
+.member figcaption {
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width:767px) {
+    .members {
+        display: block;
+    }
+
+    .member:not(:first-child) {
+        padding-top: 16px;
+    }
+}

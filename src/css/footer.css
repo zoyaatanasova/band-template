@@ -1,0 +1,31 @@
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+    color: rgba(var(--dark), 0.75);
+}
+
+
+.footer a {
+    color: inherit;
+}
+
+
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.socials li {
+    padding: 0 3px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
